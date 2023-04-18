@@ -16,16 +16,16 @@ e.g
  android:id="@+id/textView"
  android:layout_width="match_parent"
  android:layout_height="120dp"
- android:text="Swapnil Ramgire"
+ android:text="Name"
  android:background="@color/blue"/>
 
 // For string
 Go to, Project -> res -> values -> strings.xml
 And Add these lines:
 <resources>
-<string name="app_name">P3_T2083</string>
-<string name="studentName">Swapnil Ramgire</string>
-<string name="studentRollNumber">T.20.83</string>
+<string name="app_name">P3</string>
+<string name="studentName">Name</string>
+<string name="studentRollNumber">Roll num</string>
 <string name="string3">Test String 1</string>
 <string name="string4">Test String 2</string>
 </resources>

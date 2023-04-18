@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.LENGTH_SHORT).show();
                 return true;
             case R.id.studentName:
-                Toast.makeText(this, "Swapnil Ramgire T.20.83",
+                Toast.makeText(this, "Nameee",
                         Toast.LENGTH_SHORT).show();
                 return true;
             default:

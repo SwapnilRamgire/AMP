@@ -28,7 +28,7 @@ tools:context=".MainActivity">
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Swapnil Ramgire"
+        android:text="Nameee"
         android:textSize="30dp"/>
 <EditText
         android:id="@+id/editTextTextPersonName"
@@ -52,8 +52,6 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".MainActivity">
-
-<!--Swapnil Ramgire T.20.83-->
 
 <TableLayout
  android:layout_width="match_parent"
@@ -103,13 +101,13 @@ tools:context=".MainActivity">
  android:id="@+id/textView3"
  android:layout_width="wrap_content"
  android:layout_height="wrap_content"
- android:text="Swapnil Ramgire"
+ android:text="Nameee"
  android:textSize="20dp"/>
 <TextView
  android:id="@+id/textView4"
  android:layout_width="wrap_content"
  android:layout_height="wrap_content"
- android:text=" T.20.83"
+ android:text="123546"
  android:textSize="20dp"/>
 </TableRow>
 <TableRow

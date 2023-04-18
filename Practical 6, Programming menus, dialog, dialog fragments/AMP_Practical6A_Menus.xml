@@ -11,5 +11,4 @@ Select "Resource Type" : Menu -->
     <item android:id="@+id/saveAs" android:title="Save As" />
     <item android:id="@+id/delete" android:title="Delete" />
     <item android:id="@+id/close" android:title="Close" />
-    <item android:id="@+id/studentName" android:title="Swapnil Ramgire T.20.83" />
 </menu>
