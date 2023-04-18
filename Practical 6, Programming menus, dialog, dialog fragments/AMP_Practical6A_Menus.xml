@@ -1,0 +1,15 @@
+<!-- Create New project, then right click on res folder and add Android Resource File.
+Select "Resource Type" : Menu -->
+
+<!-- Below code for Menus.xml -->
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/newFile" android:title="File" />
+    <item android:id="@+id/open" android:title="Open" />
+    <item android:id="@+id/save" android:title="Save" />
+    <item android:id="@+id/saveAs" android:title="Save As" />
+    <item android:id="@+id/delete" android:title="Delete" />
+    <item android:id="@+id/close" android:title="Close" />
+    <item android:id="@+id/studentName" android:title="Swapnil Ramgire T.20.83" />
+</menu>

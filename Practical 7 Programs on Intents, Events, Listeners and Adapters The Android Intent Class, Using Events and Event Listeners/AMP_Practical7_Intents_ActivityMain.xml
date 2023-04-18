@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity">
+    <TableLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="BIODATA" android:textSize="25dp" />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Name" />
+            <EditText android:id="@+id/fn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:ems="10"
+                android:inputType="textPersonName" android:text="Name"
+            />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="Last Name" />
+            <EditText android:id="@+id/ln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:ems="10"
+                android:inputType="textPersonName" android:text="Name"
+            />
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button android:id="@+id/submitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit" />
+        </TableRow>
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>

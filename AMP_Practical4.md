@@ -1,0 +1,122 @@
+Programs related to different Layouts
+Coordinate, Linear, Relative, Table, Absolute, Frame, List View, Grid View.
+
+// add LinearLayout(horizontal and verticle) the place buttons, textViews etc in it
+e.g.
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="410dp"
+    android:layout_height="733dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+<TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AMP Practical 4" />
+<TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Swapnil Ramgire"
+        android:textSize="30dp"/>
+<EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Roll no."
+        android:textSize="35dp" />
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>
+
+// Same for Table layout
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<!--Swapnil Ramgire T.20.83-->
+
+<TableLayout
+ android:layout_width="match_parent"
+ android:layout_height="match_parent">
+<TableRow
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" >
+<Button
+ android:id="@+id/button"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+<Button
+ android:id="@+id/button2"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+<Button
+ android:id="@+id/button3"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+</TableRow>
+<TableRow
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" >
+<Button
+ android:id="@+id/button4"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+<Button
+ android:id="@+id/button5"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+<Button
+ android:id="@+id/button6"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Button" />
+</TableRow>
+<TableRow
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" >
+<TextView
+ android:id="@+id/textView3"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text="Swapnil Ramgire"
+ android:textSize="20dp"/>
+<TextView
+ android:id="@+id/textView4"
+ android:layout_width="wrap_content"
+ android:layout_height="wrap_content"
+ android:text=" T.20.83"
+ android:textSize="20dp"/>
+</TableRow>
+<TableRow
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" />
+<TableRow
+ android:layout_width="match_parent"
+ android:layout_height="match_parent" />
+</TableLayout>
+</android.support.constraint.ConstraintLayout>
