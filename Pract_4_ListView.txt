@@ -55,6 +55,10 @@ public class MainActivity extends AppCompatActivity {
         tv = (TextView) findViewById(R.id.textView);
         ArrayAdapter<String> arr;
         arr = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, tutorials);
+
+// if androidx use this instead of above line
+	arr= new ArrayAdapter<String>(this, androidx.appcompat.R.layout.support_simple_spinner_dropdown_item ,tutorials);
+
         l.setAdapter(arr);
         l.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
