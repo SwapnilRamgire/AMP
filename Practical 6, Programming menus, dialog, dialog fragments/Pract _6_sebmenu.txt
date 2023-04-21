@@ -1,0 +1,91 @@
+//seb menus
+// right click on res->new->android resource file
+//give file name menus and select type as menu
+
+///////menus.xml//////
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/file"
+        android:title="File">
+        <menu>
+            <item
+                android:id="@+id/file1"
+                android:title="File1" />
+            <item
+                android:id="@+id/file2"
+                android:title="File2" />
+            <item
+                android:id="@+id/file3"
+                android:title="File3" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/save"
+        android:title="Save File" />
+    <item
+        android:id="@+id/open"
+        android:title="Open File" />
+    <item
+        android:id="@+id/exit"
+        android:title="CLose" />
+</menu>
+-------------------------------------------------------
+
+/////////MainActivity.java///////////
+package com.example.submenu;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    public boolean onCreateOptionsMenu(Menu menu){
+        MenuInflater mi = getMenuInflater();
+        mi.inflate(R.menu.menus, menu);
+
+        // to disable menu item
+        menu.findItem(R.id.exit).setEnabled(false);
+        return true;
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()){
+            case R.id.file:
+                Toast.makeText(this, "File Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.save:
+                Toast.makeText(this, "File Saved", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.open:
+                Toast.makeText(this, "File Opened", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.exit:
+                Toast.makeText(this, "File Closed", Toast.LENGTH_SHORT).show();
+                return true;
+
+            // sub menu toast
+            case R.id.file1:
+                Toast.makeText(this, "File 1 Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.file2:
+                Toast.makeText(this, "File 2 Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.file3:
+                Toast.makeText(this, "File 3 Selected", Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                Toast.makeText(this, "Default", Toast.LENGTH_SHORT).show();
+                return super.onOptionsItemSelected(item);
+        }
+    }
+}
